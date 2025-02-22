@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="black_main">#101219</color>
+    <color name="purple_600">#4D076D</color>
+    <color name="purple_200">#6B1195</color>
+    <color name="purple_900">#3E0657</color>
+    <color name="black900">#000000</color>
+    <color name="white_main">#FFFFFF</color>
+    <color name="red_main">#FF0000</color>
+    <color name="green_main">#24A751</color>
+    <color name="gray_main">#706C6C</color>
+    <color name="color_transparent">#00FFFFFF</color>
+    <color name="color_gray_100">#4CB6B0B0</color>
+    <color name="color_gray_200">#B6B0B0</color>
+    <color name="yellow_main">#FFC700</color>
+    <color name="yellow_200">#FFD952</color>
+    <color name="white_color200">#F0F3FF</color>
+    <color name="color_gray_dotted">#A09C9C</color>
+
+    <color name="color_text_gray">@color/gray_main</color>
+    <color name="color_text_black">@color/black_main</color>
+    <color name="color_edit_text_stroke">@color/color_gray_200</color>
+    <color name="color_back_text_time">@color/color_gray_100</color>
+
+    <color name="primary_color">@color/black_main</color>
+    <color name="primary_color_variant">@color/black_main</color>
+    <color name="color_primary_on">@color/black_main</color>
+
+    <color name="back_login_start_color">@color/white_color200</color>
+    <color name="back_login_end_color">@color/white_main</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>
+
+    <!--<resources>
+            <color name="purple_200">#FFBB86FC</color>
+            <color name="purple_500">#FF6200EE</color>
+            <color name="purple_700">#FF3700B3</color>
+            <color name="teal_200">#FF03DAC5</color>
+            <color name="teal_700">#FF018786</color>
+            <color name="black">#FF000000</color>
+            <color name="white">#FFFFFFFF</color>
+        </resources>-->
