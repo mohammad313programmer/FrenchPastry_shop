@@ -50,12 +50,22 @@
         app:layout_constraintEnd_toEndOf="@+id/txtLoginApp"
         app:layout_constraintTop_toBottomOf="@+id/txtLoginApp" />
 
+    <ir.frenchpastrymain.frenchpastry.ui.customView.CustomEditeText
+        android:id="@+id/inputTextPhone"
+        android:layout_width="300dp"
+        app:type="3"
+        app:max="11"
+        app:hintText="@string/_09"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/txtFrenchPastry"
+        app:layout_constraintTop_toBottomOf="@+id/txtFrenchPastry"/>
+
     <ir.frenchpastrymain.frenchpastry.ui.customView.CustomButton
         android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        app:buttonText="ارسال کد تایید"
+        android:layout_width="200dp"
         android:layout_height="50dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtFrenchPastry"
-        app:layout_constraintTop_toBottomOf="@+id/txtFrenchPastry" />
+        app:buttonText="@string/send_code"
+        app:layout_constraintEnd_toEndOf="@+id/inputTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/inputTextPhone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,23 @@
 <resources>
     <string name="app_name">FrenchPastry</string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="loginToApp">ورود به برنامه</string>
     <string name="frenchPastry">شیرینی فرانسوی</string>
+    <string name="_09">09*********</string>
+    <string name="send_code">ارسال کد تایید</string>
+    <string name="shopping">shopping</string>
+    <string name="arrow">arrow</string>
+    <string name="logoMain">logoMain</string>
+    <string name="alert_icon">alert_icon</string>
+    <string name="menu">menu</string>
+    <string name="image">image</string>
+    <string name="f_logo">f_logo</string>
+    <string name="all">بیشتر</string>
+    <string name="main_image">main_image</string>
+    <string name="sell">تومان</string>
+    <string name="off">off</string>
+    <string name="image_profile">image_profile</string>
+    <string name="image_pastry">image_pastry</string>
+    <string name="image_cake">image_cake</string>
+    <string name="image_home">image_home</string>
+    <string name="image_shopping">image_shopping</string>
 </resources>

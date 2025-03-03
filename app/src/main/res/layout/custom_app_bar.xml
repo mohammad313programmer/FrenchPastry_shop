@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <View
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white_main"
+        android:layoutDirection="rtl"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgShopping"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/shopping"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBack"
+        app:layout_constraintStart_toEndOf="@+id/imgBack"
+        app:layout_constraintTop_toTopOf="@+id/imgBack"
+        app:srcCompat="@drawable/ic_shopping_cart_black" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/black_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:contentDescription="@string/logoMain"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/black_logo" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgAlert"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="@string/alert_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/imgBack"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/ic_alert" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBack"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="@string/arrow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+    <View
+        android:id="@+id/back_circle_shopping"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/back_circle_shopping_cart"
+        app:layout_constraintBottom_toTopOf="@+id/imgAlert"
+        app:layout_constraintStart_toStartOf="@+id/imgAlert"
+        app:layout_constraintTop_toTopOf="@+id/imgAlert" />
+
+    <TextView
+        android:id="@+id/txtAlertCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_main"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_circle_shopping"
+        app:layout_constraintEnd_toEndOf="@+id/back_circle_shopping"
+        app:layout_constraintStart_toStartOf="@+id/back_circle_shopping"
+        app:layout_constraintTop_toTopOf="@+id/back_circle_shopping"
+        tools:text="99" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="14dp"
+        android:contentDescription="@string/menu"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@drawable/back_top_view_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/countGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="txtAlertCount,back_circle_shopping "/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
